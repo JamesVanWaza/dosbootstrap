@@ -1,0 +1,10 @@
+/node_modules/
+/scss/
+.sass-cache/
+*.xml
+*.pkg
+*.yaml
+*.pkg
+.DS_Store
+images/
+package-lock.json
