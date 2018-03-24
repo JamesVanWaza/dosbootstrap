@@ -8,3 +8,4 @@
 .DS_Store
 images/
 package-lock.json
+yarn.lock
