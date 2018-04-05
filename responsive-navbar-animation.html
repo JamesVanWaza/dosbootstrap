@@ -15,206 +15,363 @@
     <link rel="icon" type="image/png" href="images/DosbrandingFaviconThree@3x.png" sizes="384x384">
     <link rel="icon" type="image/png" href="images/DosbrandingFaviconThree@4x.png" sizes="512x512">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    .navbar-toggler {
+        border: none;
+        background: transparent !important;
+    }
+
+    .navbar-toggler:hover {
+        background: transparent !important;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        width: 22px;
+        transition: all 0.2s;
+    }
+    /* ANIMATED X */
+
+    .navbar-toggler.x .navbar-toggler-icon:nth-of-type(1) {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+
+    .navbar-toggler.x .navbar-toggler-icon:nth-of-type(2) {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    .navbar-toggler.x .navbar-toggler-icon:nth-of-type(3) {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+    /* ANIMATED X COLLAPSED */
+
+    .navbar-toggler.x.collapsed .navbar-toggler-icon:nth-of-type(1) {
+        transform: rotate(0);
+    }
+
+    .navbar-toggler.x.collapsed .navbar-toggler-icon:nth-of-type(2) {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .navbar-toggler.x.collapsed .navbar-toggler-icon:nth-of-type(3) {
+        transform: rotate(0);
+    }
+    /* END ANIMATED X */
+    /* ANIMATED RIGHT ARROW */
+
+    .navbar-toggler.rarr.collapsed .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        transform-origin: right top;
+        width: 22px;
+    }
+
+    .navbar-toggler.rarr.collapsed .navbar-toggler-icon:nth-of-type(2) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.rarr.collapsed .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        transform-origin: right bottom;
+        width: 22px;
+    }
+
+    .navbar-toggler.rarr .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(11px, 6px, 0) rotate(45deg);
+        transform-origin: right top;
+        width: 11px;
+    }
+
+    .navbar-toggler.rarr .navbar-toggler-icon:nth-of-type(2) {
+        /* transform: scale(0.75); */
+    }
+
+    .navbar-toggler.rarr .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(11px, -6px, 0) rotate(-45deg);
+        transform-origin: right bottom;
+        width: 11px;
+    }
+    /* END ANIMATED RIGHT ARROW */
+    /* ANIMATED LEFT ARROW */
+
+    .navbar-toggler.larr.collapsed .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        width: 22px;
+    }
+
+    .navbar-toggler.larr.collapsed .icon-bar:nth-of-type(2) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.larr.collapsed .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        width: 22px;
+    }
+
+    .navbar-toggler.larr .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0px, 6px, 0) rotate(45deg);
+        transform-origin: left top;
+        width: 11px;
+    }
+
+    .navbar-toggler.larr .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0px, -6px, 0) rotate(-45deg);
+        transform-origin: left bottom;
+        width: 11px;
+    }
+    /* END ANIMATED LEFT ARROW */
+    /* ANIMATED UP ARROW */
+
+    .navbar-toggler.uarr.collapsed .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        width: 22px;
+    }
+
+    .navbar-toggler.uarr.collapsed .navbar-toggler-icon:nth-of-type(2) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.uarr.collapsed .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        width: 22px;
+    }
+
+    .navbar-toggler.uarr .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(1px, 0, 0) rotate(-45deg);
+        transform-origin: center center;
+        width: 11px;
+    }
+
+    .navbar-toggler.uarr .navbar-toggler-icon:nth-of-type(2) {
+        transform: rotate(-90deg);
+        transform-origin: center center;
+    }
+
+    .navbar-toggler.uarr .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0px, -14px, 0) rotate(-135deg);
+        transform-origin: right top;
+        width: 11px;
+    }
+    /* END ANIMATED UP ARROW */
+    /* ANIMATED PLUS */
+
+    .navbar-toggler.plus.collapsed .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.plus.collapsed .navbar-toggler-icon:nth-of-type(2) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.plus.collapsed .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.plus .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0px, 6px, 0) rotate(90deg);
+        transform-origin: center center;
+    }
+
+    .navbar-toggler.plus .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0px, -6px, 0) rotate(-90deg);
+        transform-origin: center center;
+    }
+    /* END ANIMATED PLUS */
+    /* ANIMATED MINUS */
+
+    .navbar-toggler.minus.collapsed .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.minus.collapsed .navbar-toggler-icon:nth-of-type(2) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.minus.collapsed .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    .navbar-toggler.minus .navbar-toggler-icon:nth-of-type(1) {
+        transform: translate3d(0, 6px, 0);
+    }
+
+    .navbar-toggler.minus .navbar-toggler-icon:nth-of-type(3) {
+        transform: translate3d(0, -6px, 0);
+    }
+    /* END ANIMATED MINUS */
+    /* FORCE NAVBAR-TOGGLE */
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li >a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+    }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#0D36CC;">
-        <a href="https://ishmaelsu.com"><img src="http://placeskull.com/170/170" alt="Logo" class="img-fluid" style="width: 3.5rem; height: 3.5rem;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="https://facebook.com/ishmaelsunday" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://twitter.com/ishmaelsunday" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://youtube.com/ishmaelsunday" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.behance.net/ishmaelsunday" target="_blank"><i class="fab fa-behance-square fa-3x"></i></a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1E47DD;">
-        <a href="https://ishmaelsu.com"><img src="http://placeskull.com/170/170" alt="Logo" class="img-fluid" style="width: 3.5rem; height: 3.5rem;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="https://facebook.com/ishmaelsunday" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://twitter.com/ishmaelsunday" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://youtube.com/ishmaelsunday" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.behance.net/ishmaelsunday" target="_blank"><i class="fab fa-behance-square fa-3x"></i></a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#2F58EE;">
-        <a href="https://ishmaelsu.com"><img src="http://placeskull.com/170/170" alt="Logo" class="img-fluid" style="width: 3.5rem; height: 3.5rem;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent3">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="https://facebook.com/ishmaelsunday" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://twitter.com/ishmaelsunday" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://youtube.com/ishmaelsunday" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.behance.net/ishmaelsunday" target="_blank"><i class="fab fa-behance-square fa-3x"></i></a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#3A69FF;">
-        <a href="https://ishmaelsu.com"><img src="http://placeskull.com/170/170" alt="Logo" class="img-fluid" style="width: 3.5rem; height: 3.5rem;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent4">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="https://facebook.com/ishmaelsunday" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://twitter.com/ishmaelsunday" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://youtube.com/ishmaelsunday" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.behance.net/ishmaelsunday" target="_blank"><i class="fab fa-behance-square fa-3x"></i></a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#4B70DD;">
-        <a href="https://ishmaelsu.com"><img src="http://placeskull.com/170/170" alt="Logo" class="img-fluid" style="width: 3.5rem; height: 3.5rem;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent5" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent5">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="https://facebook.com/ishmaelsunday" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://twitter.com/ishmaelsunday" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://youtube.com/ishmaelsunday" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.behance.net/ishmaelsunday" target="_blank"><i class="fab fa-behance-square fa-3x"></i></a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#5C81EE;">
-        <a href="https://ishmaelsu.com"><img src="http://placeskull.com/170/170" alt="Logo" class="img-fluid" style="width: 3.5rem; height: 3.5rem;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent6">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="https://facebook.com/ishmaelsunday" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://twitter.com/ishmaelsunday" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://youtube.com/ishmaelsunday" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.behance.net/ishmaelsunday" target="_blank"><i class="fab fa-behance-square fa-3x"></i></a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <div class="container-fluid">
-        <div class="page-header">
-            <h1>Bootstrap <small>3.3.7</small> Navbar Toggle Animations</h1>
-            <p class="lead">Based on <a href="https://codepen.io/bennettfeely/pen/twbyA" target="_blank">Navicon Transformicons</a> by <a href="https://codepen.io/bennettfeely/" target="_blank">Bennett Feely</a>.</p>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#navbar-collapse-x">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#top">.navbar-toggle.x</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-x">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
+    <section class="container-fluid">
+        <header class="page-header">
+            <h1>Bootstrap <small>4</small> Navbar Toggle Animations</h1>
+            <p class="lead">Based on <a href="https://codepen.io/bennettfeely/pen/twbyA" target="_blank">Navicon Transformicons</a> by <a href="https://codepen.io/jgacuca567/" target="_blank">JamesVanWaza</a>.</p>
+        </header>
+        <hr>
+        <article class="row">
+            <div class="col-sm-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">NAVBAR TOGGLE X</a>
+                    <button class="navbar-toggler x collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a> </div>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
                         </ul>
                     </div>
-                    <!-- .navbar-collapse -->
                 </nav>
             </div>
-            <div class="col-sm-4">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#top">.navbar-toggle.uarr</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
+            <div class="col-sm-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">NAVBAR TOGGLE UARR</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a> </div>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
                         </ul>
                     </div>
-                    <!-- .navbar-collapse -->
                 </nav>
             </div>
-            <div class="col-sm-4">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle larr collapsed" data-toggle="collapse" data-target="#navbar-collapse-larr">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#top">.navbar-toggle.larr</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-larr">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
+        </article>
+        <br>
+        <hr>
+        <article class="row">
+            <div class="col-sm-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">NAVBAR TOGGLE LARR</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a> </div>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
                         </ul>
                     </div>
-                    <!-- .navbar-collapse -->
                 </nav>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle rarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-rarr">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#top">.navbar-toggle.rarr</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-rarr">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
+            <div class="col-sm-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">NAVBAR TOGGLE RARR</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a> </div>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
                         </ul>
                     </div>
-                    <!-- .navbar-collapse -->
                 </nav>
             </div>
-            <div class="col-sm-4">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle plus collapsed" data-toggle="collapse" data-target="#navbar-collapse-plus">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#top">.navbar-toggle.plus</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-plus">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
+        </article>
+        <br>
+        <hr>
+        <article class="row">
+            <div class="col-sm-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">NAVBAR TOGGLE PLUS</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a> </div>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
                         </ul>
                     </div>
-                    <!-- .navbar-collapse -->
                 </nav>
             </div>
-            <div class="col-sm-4">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle minus collapsed" data-toggle="collapse" data-target="#navbar-collapse-minus">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#top">.navbar-toggle.minus</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-minus">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
-                            <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">Link</a></li>
+            <div class="col-sm-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">NAVBAR TOGGLE MINUS</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a> </div>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
                         </ul>
                     </div>
-                    <!-- .navbar-collapse -->
                 </nav>
             </div>
-        </div>
-    </div>
+        </article>
+        <br>
+        <hr>
+    </section>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
