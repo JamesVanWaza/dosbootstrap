@@ -1,6 +1,6 @@
 {
   "name": "dosbranding",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Version Two of Dosbranding ",
   "main": "index.html",
   "scripts": {
@@ -22,11 +22,11 @@
     "jshint-stylish": "^2.2.1",
     "load-grunt-tasks": "^3.5.2",
     "node-sass": "^4.8.3",
-    "popper.js": "^1.14.1"
+    "popper.js": "^1.14.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.4",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.1.0",
     "grunt": "^1.0.2"
   },
   "repository": {
