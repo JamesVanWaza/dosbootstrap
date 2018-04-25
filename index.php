@@ -25,7 +25,7 @@
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="#">Portfolio</a> </li>
       <li class="nav-item"><a class="nav-link" href="#">Services</a> </li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a> </li>
+      <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a> </li>
     </ul>
   </div>
 </nav>
