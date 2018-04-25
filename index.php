@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<script src="node_modules/@fortawesome/fontawesome/index.js"></script>
-<!--    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome/styles.css">-->
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="images/DosbrandingFaviconThree@0.5x.png" sizes="64x64">
-<link rel="icon" type="image/png" href="images/DosbrandingFaviconThree@0.75x.png" sizes="96x96">
-<link rel="icon" type="image/png" href="images/DosbrandingFaviconThree.png" sizes="128x128">
-<link rel="icon" type="image/png" href="images/DosbrandingFaviconThree@2x.png" sizes="256x256">
-<link rel="icon" type="image/png" href="images/DosbrandingFaviconThree@3x.png" sizes="384x384">
-<link rel="icon" type="image/png" href="images/DosbrandingFaviconThree@4x.png" sizes="512x512">
-<title>Home</title>
-</head>
+<?php
+require 'html5req.php';
+require 'navbar.php';
+?>
 
-<body>
-<!--<nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark"> -->
-<nav class="navbar navbar-light navbar-expand-lg text-sm-center" style="background-color: transparent;"> <a class="navbar-brand" href="https://dosbranding.com">DOSBRANDING</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  <div id="navbarNavDropdown" class="navbar-collapse collapse">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#">Portfolio</a> </li>
-      <li class="nav-item"><a class="nav-link" href="#">Services</a> </li>
-      <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a> </li>
-    </ul>
-  </div>
-</nav>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -46,9 +20,4 @@
 <nav class="navbar fixed-bottom navbar-light text-sm-center" style="background-color: transparent;">
 	<i class="far fa-copyright" aria-hidden="true"> 2016 - 2018 <a href="https://dosbranding.com" target="_blank">DOSBRANDING INC</a></i>
 </nav>
-<!-- jQuery first, then Tether, then Bootstrap JS. --> 
-<script src="node_modules/jquery/dist/jquery.min.js"></script> 
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script> 
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+<?php require 'footer.php';?>
