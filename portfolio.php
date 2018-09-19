@@ -4,7 +4,8 @@ require 'navbar.php';
 ?>
 
 <body>
-  <div class="card-deck">
+	<section class="container-fluid">
+	  <div class="card-deck">
     <div class="card">
       <img class="card-img-top" src="https://picsum.photos/2560/1280?image=26" alt="Card image cap">
       <div class="card-body">
@@ -53,4 +54,6 @@ require 'navbar.php';
       </div>
     </div>
   </div>
+	</section>
+
 <?php require 'footer.php';?>
