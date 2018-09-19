@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="images/DosFavicon2@0.5x.png" sizes="64x64">
-<link rel="icon" type="image/png" href="images/DosFavicon2@0.75x.png" sizes="96x96">
-<link rel="icon" type="image/png" href="images/DosFavicon2.png" sizes="128x128">
-<link rel="icon" type="image/png" href="images/DosFavicon2@2x.png" sizes="256x256">
-<link rel="icon" type="image/png" href="images/DosFavicon2@3x.png" sizes="384x384">
-<link rel="icon" type="image/png" href="images/DosFavicon2@4x.png" sizes="512x512">
-<title>Portfolio</title>
-</head>
+<?php
+require 'html5req.php';
+require 'navbar.php';
+?>
 
 <body>
   <div class="card-deck">
@@ -65,8 +53,4 @@
       </div>
     </div>
   </div>
-<script src="node_modules/jquery/dist/jquery.min.js"></script> 
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script> 
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+<?php require 'footer.php';?>
