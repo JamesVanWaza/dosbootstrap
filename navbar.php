@@ -6,9 +6,9 @@
     <ul class="navbar-nav mr-auto">
     </ul>
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfolio</a> </li>
-      <li class="nav-item"><a class="nav-link" href="services.php">Services</a> </li>
-      <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a> </li>
+      <li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a> </li>
+      <li class="nav-item"><a class="nav-link" href="services">Services</a> </li>
+      <li class="nav-item"><a class="nav-link" href="contact">Contact</a> </li>
     </ul>
   </div>
 </nav>
