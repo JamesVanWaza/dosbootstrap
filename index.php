@@ -18,6 +18,6 @@ require 'navbar.php';
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
 <nav class="navbar fixed-bottom navbar-light text-sm-center" style="background-color: transparent;">
-	<i class="far fa-copyright" aria-hidden="true"> 2016 - 2018 <a href="https://dosbranding.com" target="_blank">DOSBRANDING INC</a></i>
+	<i class="fas fa-copyright"> 2016 - 2018 <a href="https://dosbranding.com" target="_blank">DOSBRANDING INC</a></i>
 </nav>
 <?php require 'footer.php';?>
