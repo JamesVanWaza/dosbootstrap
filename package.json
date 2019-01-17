@@ -1,6 +1,6 @@
 {
   "name": "dosbranding",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "Version Two of Dosbranding ",
   "main": "index.html",
   "scripts": {
@@ -12,7 +12,7 @@
   "author": "JamesVanWaza <info@dosbranding.com>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.4.4",
+    "autoprefixer": "^9.4.5",
     "grunt-contrib-jshint": "^2.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
@@ -20,7 +20,8 @@
     "grunt-sass": "^3.0.2",
     "jquery": "^3.3.1",
     "jshint-stylish": "^2.2.1",
-    "load-grunt-tasks": "^4.0.0"
+    "load-grunt-tasks": "^4.0.0",
+    "style-loader": "^0.23.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",
@@ -30,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JamesVanWaza/dosbrandingv2.git"
+    "url": "git+https://github.com/JamesVanWaza/dosbranding.git"
   },
   "bugs": {
-    "url": "https://github.com/JamesVanWaza/dosbrandingv2/issues"
+    "url": "https://github.com/JamesVanWaza/dosbranding/issues"
   },
-  "homepage": "https://github.com/JamesVanWaza/dosbrandingv2#readme",
+  "homepage": "https://github.com/JamesVanWaza/dosbranding#readme",
   "peerDependencies": {
     "popper.js": "^1.14.6"
   }
