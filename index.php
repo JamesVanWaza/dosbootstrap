@@ -12,10 +12,10 @@ require 'navbar.php';
   </ol>
 
   <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?random" alt="First slide"></div>
-    <div class="carousel-item"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?random" alt="Second slide"></div>
-    <div class="carousel-item"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?random" alt="Third slide"></div>
-    <div class="carousel-item"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?random" alt="Fourth slide"></div>
+    <div class="carousel-item active"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?image=1051" alt="First slide"></div>
+    <div class="carousel-item"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?image=1035" alt="Second slide"></div>
+    <div class="carousel-item"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?image=1032" alt="Third slide"></div>
+    <div class="carousel-item"><img class="d-block w-100 img-fluid" src="https://picsum.photos/2560/1280/?image=1031" alt="Fourth slide"></div>
   </div>
 
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
