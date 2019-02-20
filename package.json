@@ -1,6 +1,6 @@
 {
   "name": "dosbranding",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Version Two of Dosbranding ",
   "main": "index.html",
   "scripts": {
@@ -12,7 +12,7 @@
   "author": "JamesVanWaza <info@dosbranding.com>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.4.7",
+    "autoprefixer": "^9.4.8",
     "grunt-contrib-jshint": "^2.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
@@ -24,8 +24,8 @@
     "style-loader": "^0.23.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.1",
-    "bootstrap": "^4.2.1",
+    "@fortawesome/fontawesome-free": "^5.7.2",
+    "bootstrap": "^4.3.1",
     "grunt": "^1.0.2",
     "node-sass": "^4.11.0"
   },
