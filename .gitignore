@@ -16,3 +16,5 @@ yarn.lock
 functions/.eslintrc.json
 functions/node_modules/
 firestore.rules
+firestore.indexes.json
+storage.rules
