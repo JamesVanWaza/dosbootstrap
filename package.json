@@ -1,35 +1,36 @@
 {
-  "name": "dosbranding",
-  "version": "1.3.0",
-  "description": "Version Two of Dosbranding ",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Bootstrap4"
-  ],
-  "author": "JamesVanWaza <info@dosbranding.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^9.7.5",
-    "grunt-contrib-watch": "^1.0.0",
-    "jquery": "^3.4.1",
-    "jshint-stylish": "^2.2.1",
-    "node-sass": "^4.13.1",
-    "style-loader": "^1.1.3"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
-    "bootstrap": "^4.4.1"
-  },
-  "repository": "git+https://github.com/JamesVanWaza/dosbranding.git",
-  "bugs": {
-    "url": "https://github.com/JamesVanWaza/dosbranding/issues"
-  },
-  "homepage": "https://github.com/JamesVanWaza/dosbranding#readme",
-  "peerDependencies": {
-    "popper.js": "^1.15.0",
-    "webpack": "^4.0.0"
-  }
+    "name": "dosbranding",
+    "version": "1.3.1",
+    "description": "Version Two of Dosbranding ",
+    "main": "index.html",
+    "scripts": {
+        "build": "webpack -w",
+        "start:dev": "webpack-dev-server"
+    },
+    "keywords": [
+        "Bootstrap4"
+    ],
+    "author": "JamesVanWaza <info@dosbranding.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^9.7.5",
+        "grunt-contrib-watch": "^1.0.0",
+        "jquery": "^3.4.1",
+        "jshint-stylish": "^2.2.1",
+        "node-sass": "^4.13.1",
+        "style-loader": "^1.1.3"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.0",
+        "bootstrap": "^4.4.1"
+    },
+    "repository": "git+https://github.com/JamesVanWaza/dosbranding.git",
+    "bugs": {
+        "url": "https://github.com/JamesVanWaza/dosbranding/issues"
+    },
+    "homepage": "https://github.com/JamesVanWaza/dosbranding#readme",
+    "peerDependencies": {
+        "popper.js": "^1.15.0",
+        "webpack": "^4.0.0"
+    }
 }
