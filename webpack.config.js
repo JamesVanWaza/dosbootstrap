@@ -31,8 +31,8 @@ module.exports = {
         minimizer: [new UglifyJsPlugin()]
     },
     plugins: [new HtmlWebpackPlugin({
-		title: "My Page Title - Yay",
-	})],
+        title: "Dosbranding Creative",
+    })],
     module: {
         rules: [{
                 // Whenever a javascript file is found, babel should run and do not compile node_module files
@@ -74,7 +74,7 @@ module.exports = {
             }
         ]
     },
-	resolve: {
-    	extensions: ['.js', '.jsx', '.scss']
-  }
+    resolve: {
+        extensions: ['.js', '.jsx', '.scss']
+    }
 }
