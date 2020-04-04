@@ -20,3 +20,4 @@ firestore.indexes.json
 storage.rules
 src/scss
 database.rules.json
+index.html
