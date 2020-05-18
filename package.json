@@ -1,6 +1,6 @@
 {
     "name": "dosbranding",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "Dosbranding Bootstrap ",
     "main": "index.html",
     "scripts": {
@@ -31,8 +31,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.0",
-        "bootstrap": "^4.4.1",
-        "jshint": "^2.11.0"
+        "bootstrap": "^4.5.0"
     },
     "repository": "https://github.com/JamesVanWaza/dosbranding.git",
     "bugs": {
