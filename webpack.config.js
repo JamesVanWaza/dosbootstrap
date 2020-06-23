@@ -8,31 +8,32 @@ module.exports = {
     //	https://webpack.js.org/configuration/mode/
     mode: 'development',
     entry: "./src/index.js",
-    //	entry: {
-    //		about: './src/about.js',
-    //		contact: './src/contact.js'
-    //	},
     output: {
-        //		filename: "[name].bundle.js",
         filename: "main.js",
-        //		path: path.resolve(__dirname, "public") Can change directory name
         path: path.resolve(__dirname, "public")
     },
-    // Can change the entry name
-    // entry: "./mbuzi/mbuzide.js",
     devServer: {
         contentBase: path.join(__dirname, "public"),
-        port: 9002
+        port: 9005
     },
     optimization: {
-        //		splitChunks: {
-        //			chunks: 'all'
-        //		}
         minimizer: [new UglifyJsPlugin()]
     },
-    plugins: [new HtmlWebpackPlugin({
-        title: "Dosbranding Creative",
-    })],
+    plugins: [
+        // Main Page
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/html-templates/index-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: '404.html',
+            template: './src/html-templates/404-template.html'
+        }),
+        // Favicon
+        // new FaviconsWebpackPlugin({
+        //     logo: './src/images/B-Favicon@4x.png'
+        // })
+    ],
     module: {
         rules: [{
                 // Whenever a javascript file is found, babel should run and do not compile node_module files
