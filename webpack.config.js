@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+
 module.exports = {
     //	https://webpack.js.org/configuration/mode/
     mode: 'development',
@@ -29,10 +31,17 @@ module.exports = {
             filename: '404.html',
             template: './src/html-templates/404-template.html'
         }),
-        // Favicon
-        // new FaviconsWebpackPlugin({
-        //     logo: './src/images/B-Favicon@4x.png'
-        // })
+        new HtmlWebpackPlugin({
+            filename: 'portfolio.html',
+            template: './src/html-templates/portfolio-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: './src/html-templates/contact-template.html'
+        }),
+        new FaviconsWebpackPlugin({
+            logo: './src/images/D002-Favicon7@4x.png'
+        })
     ],
     module: {
         rules: [{
