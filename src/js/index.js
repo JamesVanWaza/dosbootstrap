@@ -8,4 +8,4 @@ import 'jquery';
 import 'popper.js';
 
 /** Botstrap SCSS **/
-import './scss/style.scss';
+import '../scss/style.scss';

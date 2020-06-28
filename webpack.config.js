@@ -9,9 +9,12 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 module.exports = {
     //	https://webpack.js.org/configuration/mode/
     mode: 'development',
-    entry: "./src/index.js",
+    entry: {
+        index: './src/js/index.js',
+        algolia: './src/js/algolia.js',
+    },
     output: {
-        filename: "main.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "public")
     },
     devServer: {
