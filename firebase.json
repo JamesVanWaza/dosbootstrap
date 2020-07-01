@@ -13,7 +13,7 @@
         "source": "functions"
     },
     "hosting": {
-        "site": "startbootstrap-dostesting",
+        "site": "dosbootstrap",
         "public": "public",
         "ignore": [
             "firebase.json",
