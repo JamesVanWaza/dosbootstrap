@@ -21,3 +21,5 @@ storage.rules
 src/scss
 database.rules.json
 index.html
+public/*.bundle.js
+public/*.html 
