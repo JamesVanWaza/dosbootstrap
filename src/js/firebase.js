@@ -33,3 +33,29 @@ firebase.initializeApp(firebaseConfig);
 
 // Initialize Performance Monitoring and get a reference to the service
 const perf = firebase.performance();
+
+
+// Contact Form
+const form = document.getElementById("demo-form");
+const fname = document.getElementById("#fname");
+const lname = document.getElementById("#lname");
+const email = document.getElementById("#email");
+const message = document.getElementById("#message");
+
+// Listen to the form submission
+form.addEventListener("submit", (e) => {
+    // Prevent the default form redirect
+    e.preventDefault();
+
+    // Write a new message to the database collection "guestbook"
+    firebase.firestore().collection("contactForm").add({
+        FirstName: input.value,
+        timestamp: Date.now(),
+    });
+
+    // clear message input field
+    input.value = "";
+
+    // Retutn false to avoid redirect
+    return false;
+});
