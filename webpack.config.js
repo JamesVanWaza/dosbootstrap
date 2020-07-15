@@ -12,6 +12,7 @@ module.exports = {
     entry: {
         index: './src/js/index.js',
         algolia: './src/js/algolia.js',
+        firebase: './src/js/firebase.js'
     },
     output: {
         filename: "[name].bundle.js",
