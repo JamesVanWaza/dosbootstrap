@@ -1,6 +1,6 @@
 {
     "name": "dosbranding",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "description": "Dosbranding Bootstrap ",
     "main": "index.html",
     "scripts": {
@@ -39,11 +39,11 @@
     "dependencies": {
         "bootstrap": "^4.5.0"
     },
-    "repository": "https://github.com/JamesVanWaza/dosbranding.git",
+    "repository": "https://github.com/JamesVanWaza/dosbootstrap.git",
     "bugs": {
-        "url": "https://github.com/JamesVanWaza/dosbranding/issues"
+        "url": "https://github.com/JamesVanWaza/dosbootstrap/issues"
     },
-    "homepage": "https://github.com/JamesVanWaza/dosbranding#readme",
+    "homepage": "https://github.com/JamesVanWaza/dosbootstrap#readme",
     "peerDependencies": {
         "webpack": "^4.0.0"
     }
