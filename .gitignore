@@ -22,3 +22,6 @@ src/scss
 database.rules.json
 index.html
 public/ 
+.pnp.js
+.yarn/
+.yarnrc.yml
