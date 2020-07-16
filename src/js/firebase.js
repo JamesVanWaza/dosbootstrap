@@ -35,27 +35,33 @@ firebase.initializeApp(firebaseConfig);
 const perf = firebase.performance();
 
 
-// Contact Form
-const form = document.getElementById("demo-form");
-const fname = document.getElementById("#fname");
-const lname = document.getElementById("#lname");
-const email = document.getElementById("#email");
-const message = document.getElementById("#message");
+const firstName = document.querySelector("#firstName");
+const lastName = document.querySelector("#lastName");
+const email = document.querySelector("#email");
+const inputMsg = document.querySelector("#inputMsg");
+const form = document.querySelector("#demo-form");
 
-// Listen to the form submission
-form.addEventListener("submit", (e) => {
-    // Prevent the default form redirect
-    e.preventDefault();
+// Initialize Cloud Firestore through Firebase
+const db = firebase.firestore();
 
-    // Write a new message to the database collection "guestbook"
-    firebase.firestore().collection("contactForm").add({
-        FirstName: input.value,
-        timestamp: Date.now(),
-    });
-
-    // clear message input field
-    input.value = "";
-
-    // Retutn false to avoid redirect
-    return false;
-});
+// Write data to db
+const doSth = () => {
+    db.collection("contactForm")
+        .add({
+            firstName: firstName.value,
+            lastName: lastName.value,
+            email: email.value,
+            message: inputMsg.value,
+            timestamp: Date.now()
+        })
+        .then(function(docRef) {
+            console.log("Document written with ID: ", docRef.id);
+            firstName.value = "";
+            lastName.value = "";
+            email.value = "";
+            inputMsg.value = "";
+        })
+        .catch(function(error) {
+            console.error("Error adding document: ", error);
+        });
+};
