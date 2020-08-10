@@ -36,9 +36,9 @@ const perf = firebase.performance();
 
 
 const firstName = document.getElementById("#firstName");
-const lastName = document.getElementById("#lastName");
-const email = document.getElementById("#email");
-const inputMsg = document.getElementById("#inputMsg");
+// const lastName = document.getElementById("#lastName");
+// const email = document.getElementById("#email");
+// const inputMsg = document.getElementById("#inputMsg");
 const form = document.getElementById("#demo-form");
 
 // Initialize Cloud Firestore through Firebase
@@ -67,25 +67,25 @@ const db = firebase.firestore();
 // };
 
 // Listen to the form submission
-form.addEventListener("submit", (e) => {
-    // Prevent the default form redirect
-    e.preventDefault();
+// form.addEventListener("submit", (e) => {
+//     // Prevent the default form redirect
+//     e.preventDefault();
 
-    // Write a new message to the database collection "guestbook"
-    firebase.firestore().collection("contactForm").add({
-        firstName: firstName.value,
-        lastName: lastName.value,
-        email: email.value,
-        message: inputMsg.value,
-        timestamp: Date.now()
-    });
+//     // Write a new message to the database collection "guestbook"
+//     firebase.firestore().collection("contactForm").add({
+//         firstName: firstName.value,
+//         lastName: lastName.value,
+//         email: email.value,
+//         message: inputMsg.value,
+//         timestamp: Date.now()
+//     });
 
-    // clear message input field
-    firstName.value = "";
-    lastName.value = "";
-    email.value = "";
-    message.value = "";
+//     // clear message input field
+//     firstName.value = "";
+//     lastName.value = "";
+//     email.value = "";
+//     message.value = "";
 
-    // Return false to avoid redirect
-    return false;
-});
+//     // Return false to avoid redirect
+//     return false;
+// });
