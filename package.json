@@ -1,6 +1,6 @@
 {
   "name": "dosbootstrap",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "Getting started with Bootstrap4 ",
   "main": "index.html",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.5.2",
-    "instantsearch.js": "^4.7.0"
+    "instantsearch.js": "^4.7.1"
   },
   "peerDependencies": {},
   "devDependencies": {
