@@ -1,6 +1,6 @@
 {
   "name": "dosbootstrap",
-  "version": "2.4.5",
+  "version": "2.4.7",
   "description": "Getting started with Bootstrap4 ",
   "main": "index.html",
   "scripts": {
@@ -11,12 +11,13 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.5.2",
-    "instantsearch.js": "^4.7.1"
+    "firebase": "^7.19.1",
+    "instantsearch.js": "^4.7.2"
   },
   "peerDependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "algoliasearch": "^4.4.0",
     "autoprefixer": "^9.8.6",
@@ -25,8 +26,8 @@
     "css-loader": "^4.2.2",
     "datatables.net": "^1.10.21",
     "favicons-webpack-plugin": "^4.2.0",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
     "instantsearch.css": "^7.4.4",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
