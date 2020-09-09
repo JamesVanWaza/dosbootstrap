@@ -13,7 +13,6 @@
         "source": "functions"
     },
     "hosting": {
-        "site": "dosbootstrap",
         "public": "public",
         "ignore": [
             "firebase.json",
@@ -26,19 +25,22 @@
     },
     "emulators": {
         "functions": {
-            "port": "5002"
+            "port": 4001
         },
         "firestore": {
-            "port": "8085"
+            "port": 5001
         },
         "database": {
-            "port": "9005"
+            "port": 6001
         },
         "hosting": {
-            "port": "5005"
+            "port": 7001
         },
         "pubsub": {
-            "port": "8085"
+            "port": 8001
+        },
+        "ui": {
+            "enabled": true
         }
     }
 }
