@@ -5,7 +5,7 @@ import 'bootstrap';
 import 'jquery';
 
 /** PopperJS */
-import 'popper.js';
+import '@popperjs/core';
 
 /** Botstrap SCSS **/
 import '../scss/style.scss';
