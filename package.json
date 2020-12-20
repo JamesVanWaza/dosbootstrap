@@ -42,12 +42,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/JamesVanWaza/bootstrap-4-webpack.git"
+        "url": "git+https://github.com/JamesVanWaza/dosbootstrap.git"
     },
     "bugs": {
-        "url": "https://github.com/JamesVanWaza/bootstrap-4-webpack/issues"
+        "url": "https://github.com/JamesVanWaza/dosbootstrap/issues"
     },
-    "homepage": "https://github.com/JamesVanWaza/bootstrap-4-webpack#readme",
+    "homepage": "https://github.com/JamesVanWaza/dosbootstrap#readme",
     "keywords": [
         "Bootstrap",
         "Webpack"
