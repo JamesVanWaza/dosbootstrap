@@ -5,7 +5,7 @@
     "main": "index.html",
     "scripts": {
         "build": "webpack -w",
-        "start:dev": "webpack-dev-server"
+        "start:dev": "webpack serve"
     },
     "author": "JamesVanWaza <info@dosbranding.com>",
     "license": "MIT",
