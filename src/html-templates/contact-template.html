@@ -33,19 +33,23 @@
     </nav>
     <section class="container-fluid mt-1">
         <form action="" id="demo-form">
-            <div class="form-row">
-                <div class="form-group col-md-6">
+            <div class="row mb-3">
+                <div class="col col-md-6">
                     <input type="text" name="fname" id="fname" class="form-control form-control-lg" placeholder="First Name">
                 </div>
-                <div class="form-group col-md-6">
+                <div class="col col-md-6">
                     <input type="text" name="lname" id="lname" class="form-control form-control-lg" placeholder="Last Name">
                 </div>
             </div>
-            <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="Email Address">
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="Email Address">
+                </div>
             </div>
-            <div class="form-group">
-                <textarea name="" id="inputMsg" cols="30" rows="10" class="form-control form-control-lg" placeholder="Message"></textarea>
+            <div class="row mb-3">
+                <div class="col">
+                    <textarea name="" id="inputMsg" cols="30" rows="10" class="form-control form-control-lg" placeholder="Message"></textarea>
+                </div>
             </div>
             <button class="g-recaptcha btn btn-primary btn-block" data-sitekey="6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7" data-callback='onSubmit' data-action='submit' type="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </form>
