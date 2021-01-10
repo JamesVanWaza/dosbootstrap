@@ -32,26 +32,50 @@
         </div>
     </nav>
     <section class="container-fluid mt-1">
-        <form action="" id="demo-form">
+        <form id="demo-form" class="needs-validation" novalidate>
             <div class="row mb-3">
                 <div class="col col-md-6">
-                    <input type="text" name="fname" id="fname" class="form-control form-control-lg" placeholder="First Name">
+                    <label for="fName" class="form-label"></label>
+                    <input type="text" name="fname" id="fName" class="form-control form-control-lg" placeholder="First Name" required>
+                    <div class="invalid-feedback">First Name</div>
                 </div>
+
                 <div class="col col-md-6">
-                    <input type="text" name="lname" id="lname" class="form-control form-control-lg" placeholder="Last Name">
+                    <label for="lName" class="form-label"></label>
+                    <input type="text" name="lname" id="lName" class="form-control form-control-lg" placeholder="Last Name" required>
+                    <div class="invalid-feedback">Last Name</div>
                 </div>
+
             </div>
             <div class="row mb-3">
                 <div class="col">
-                    <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="Email Address">
+                    <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="Email Address" required>
+                    <div class="invalid-feedback">Email</div>
                 </div>
+
             </div>
             <div class="row mb-3">
                 <div class="col">
-                    <textarea name="" id="inputMsg" cols="30" rows="10" class="form-control form-control-lg" placeholder="Message"></textarea>
+                    <textarea name="" id="inputMsg" cols="30" rows="10" class="form-control form-control-lg" placeholder="Message" required></textarea>
+                    <div class="invalid-feedback">Message</div>
                 </div>
             </div>
-            <button class="g-recaptcha btn btn-primary btn-block" data-sitekey="6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7" data-callback='onSubmit' data-action='submit' type="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <button class="g-recaptcha btn btn-primary btn-block" data-sitekey="6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7" data-callback='onSubmit' data-action='submit' type="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button> -->
+            <button class="btn btn-primary btn-submit" type="submit">Submit form <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </form>
     </section>
 
