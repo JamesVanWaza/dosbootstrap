@@ -1,7 +1,7 @@
 {
     "name": "dosbootstrap",
-    "version": "2.5.2",
-    "description": "Getting started with Bootstrap4 ",
+    "version": "2.5.3",
+    "description": "Dosbranding Creative ",
     "main": "index.html",
     "scripts": {
         "build": "webpack -w",
