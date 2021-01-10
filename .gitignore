@@ -17,7 +17,6 @@ functions/node_modules/
 firestore.rules
 firestore.indexes.json
 storage.rules
-src/scss
 database.rules.json
 index.html
 public/ 
