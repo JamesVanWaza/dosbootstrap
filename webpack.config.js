@@ -11,9 +11,9 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/js/index.js',
-        algolia: './src/js/algolia.js',
         firebase: './src/js/firebase.js',
-        contact2: './src/js/contact-two.js'
+        contact1: './src/js/contact.js',
+        contact2: './src/js/contactwo.js'
     },
     output: {
         filename: "[name].bundle.js",

@@ -41,16 +41,23 @@
             <input class="form-control" id="email" placeholder="Your name" />
             <label class="mt-2">Message</label>
             <textarea class="form-control" id="inputMsg"></textarea> -->
-            <button class="mt-3 btn btn-secondary btn-block">Send!</button>
+            <!-- <button class="mt-3 btn btn-secondary btn-block">Send!</button> -->
+            <button class="g-recaptcha mt-3 btn btn-secondary btn-block" data-sitekey="6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7" data-callback='onSubmit' data-action='submit'>Send!</button>
         </div>
     </section>
-    <script src="https://www.google.com/recaptcha/api.js "></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7"></script>
     <script>
-        function onSubmit(token) {
-            document.getElementById("demo-form ").submit();
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7', {
+                    action: 'submit'
+                }).then(function(token) {
+                    // Add your logic to submit to your backend server here.
+                });
+            });
         }
     </script>
-    <script src="contact-two.js"></script>
 </body>
 
 </html>
