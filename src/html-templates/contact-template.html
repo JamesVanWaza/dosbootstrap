@@ -60,22 +60,10 @@
                     <div class="invalid-feedback">Message</div>
                 </div>
             </div>
-            <div class="row mb-3">
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- <button class="g-recaptcha btn btn-primary btn-block" data-sitekey="6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7" data-callback='onSubmit' data-action='submit' type="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button> -->
-            <button class="btn btn-primary btn-submit" type="submit">Submit form <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            <!-- <button class="g-recaptcha btn btn-primary btn-block btn-submit" data-sitekey="6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7" data-callback='onSubmit' data-action='submit' type="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button> -->
+            <button class="btn btn-primary btn-submit" type="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            <!-- <button class="g-recaptcha" data-sitekey="6Lffp6oZAAAAACXUJ4NryG6bURIh1iL3CnF2B6q7" data-callback='onSubmit' data-action='submit'>Submit</button> -->
         </form>
     </section>
 
@@ -90,7 +78,7 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         function onSubmit(token) {
-            document.getElementById("demo-form").submit();
+            document.querySelector("#demo-form").submit();
         }
     </script>
 </body>
