@@ -41,7 +41,7 @@ function submitForm(e) {
     e.preventDefault();
 
     //Get value
-    let name = getInputVal('name');
+    let name = getInputVal('fName');
 
     // Save message
     saveMessage(name);
@@ -56,6 +56,8 @@ function getInputVal(id) {
 function saveMessage(name) {
     messagesRef.set({
         name: name,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        // add last updated on 
     });
+    console.log('Submitted');
 }
