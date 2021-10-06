@@ -19,10 +19,15 @@ module.exports = {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "public")
     },
+    target: 'web',
     devServer: {
-        contentBase: path.join(__dirname, "public"),
-        open: true,
-        port: 9005
+        open: {
+            app: 'Google Chrome'
+        },
+        watchFiles: {
+            paths: ['src/']
+        },
+        port: 2002
     },
     optimization: {
         minimizer: [new UglifyJsPlugin()]
