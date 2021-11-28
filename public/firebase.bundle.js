@@ -1,0 +1,2 @@
+/*! For license information please see firebase.bundle.js.LICENSE.txt */
+(()=>{var __webpack_modules__={"./src/js/firebase.js":()=>{eval("\n\n//# sourceURL=webpack://dosbootstrap/./src/js/firebase.js?")}},__webpack_exports__={};__webpack_modules__["./src/js/firebase.js"]()})();

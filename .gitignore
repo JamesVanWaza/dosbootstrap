@@ -17,8 +17,6 @@ firestore.rules
 firestore.indexes.json
 storage.rules
 database.rules.json
-index.html
-public/ 
 .pnp.js
 .yarn/
 .yarnrc.yml

@@ -1,0 +1,2 @@
+/*! For license information please see contact2.bundle.js.LICENSE.txt */
+(()=>{var __webpack_modules__={"./src/js/contactwo.js":()=>{eval('function addTextNode(text) {\n  var newtext = document.createTextNode(text),\n      p1 = document.getElementById("p1");\n  p1.appendChild(newtext);\n}\n\n//# sourceURL=webpack://dosbootstrap/./src/js/contactwo.js?')}},__webpack_exports__={};__webpack_modules__["./src/js/contactwo.js"]()})();
