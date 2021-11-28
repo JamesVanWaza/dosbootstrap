@@ -1,83 +1,93 @@
-/** Bootstrap **/
-
-@import '~bootstrap/scss/functions',
-'~bootstrap/scss/variables';
-@import "custom";
-@import "typekit";
-@import "algolia";
-@import "~bootstrap/scss/bootstrap";
-
-/** Font Awesome */
-
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
-
-/** Spacing **/
-
-.mt-0 {
-    padding-top: ($spacer * .25);
-}
-
-.mt-1 {
-    padding-top: ($spacer * .5);
-}
-
-
-/** Navbar */
-
-.fa-bars {
-    color: $white;
-    &:hover {
-        transition: ease-in 0.5s;
-        transform: rotate(90deg);
-    }
-}
-
-.fa-heart {
-    color: $white;
-    &:hover {
-        transition: ease-in 0.5s;
-        transform: scale(1.5);
-        color: $red;
-    }
-}
-
-.navbar-toggler {
-    &:hover {
-        background-color: invert($white);
-    }
-}
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px;
-    /* Vertically center the text there */
-    background-color: #a14ede;
-    text-align: center;
-    color: $white;
-    font-size: 20px;
-}
-
-.btn-submit {
-    &:hover {
-        background-color: $purple-600;
-        border: $border-color;
-        transition: ease-in 0.5s;
-    }
-}
+ /** Bootstrap **/
+ 
+ @import '~bootstrap/scss/functions',
+ '~bootstrap/scss/variables';
+ @import "custom";
+ @import "typekit";
+ @import "algolia";
+ @import "~bootstrap/scss/bootstrap";
+ /** Google Fonts **/
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;900&family=PT+Mono&family=Playfair+Display:wght@500;700&display=swap');
+ h2 {
+     font-family: 'Playfair Display', serif;
+ }
+ 
+ h3 {
+     font-family: 'PT Mono', monospace;
+ }
+ /** Font Awesome */
+ 
+ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+ @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+ @import '~@fortawesome/fontawesome-free/scss/solid';
+ @import '~@fortawesome/fontawesome-free/scss/brands';
+ /** Spacing **/
+ 
+ .mt-0 {
+     padding-top: ($spacer * .25);
+ }
+ 
+ .mt-1 {
+     padding-top: ($spacer * .5);
+ }
+ /** Navbar */
+ 
+ .fa-bars {
+     color: $white;
+     &:hover {
+         transition: ease-in 0.5s;
+         transform: rotate(90deg);
+     }
+ }
+ 
+ .fa-heart {
+     color: $white;
+     &:hover {
+         transition: ease-in 0.5s;
+         transform: scale(1.5);
+         color: $red;
+     }
+ }
+ 
+ .navbar-toggler {
+     &:hover {
+         background-color: invert($white);
+     }
+ }
+ 
+ html {
+     position: relative;
+     min-height: 100%;
+ }
+ 
+ body {
+     /* Margin bottom by footer height */
+     margin-bottom: 60px;
+ }
+ 
+ .footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     /* Set the fixed height of the footer here */
+     height: 60px;
+     line-height: 60px;
+     /* Vertically center the text there */
+     background-color: $purple-500;
+     text-align: center;
+     color: $white;
+     font-size: 20px;
+ }
+ 
+ .btn-submit {
+     &:hover {
+         background-color: $purple-600;
+         border: $border-color;
+         transition: ease-in 0.5s;
+     }
+ }
+ 
+ nav {
+     background-color: $purple-500;
+ }

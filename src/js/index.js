@@ -58,3 +58,7 @@ function footer() {
     const newDiv = document.getElementById("div");
     document.body.insertBefore(footerDiv, newDiv);
 }
+
+/** DarkMode */
+// const darkMode = document.getElementById("flexSwitchCheckChecked");
+// darkMode.addEventListener("click", darkModeToggle);
