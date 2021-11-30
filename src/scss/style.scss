@@ -36,7 +36,7 @@
  .fa-bars {
      color: $white;
      &:hover {
-         transition: ease-in 0.5s;
+         transition: ease-in 0.3s;
          transform: rotate(90deg);
      }
  }
@@ -50,12 +50,11 @@
      }
  }
  
- .navbar-toggler {
-     &:hover {
-         background-color: invert($white);
-     }
- }
- 
+ //  .navbar-toggler {
+ //      &:hover {
+ //          background-color: invert($white);
+ //      }
+ //  }
  html {
      position: relative;
      min-height: 100%;
