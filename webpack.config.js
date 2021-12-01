@@ -54,6 +54,10 @@ module.exports = {
             filename: 'contact-two.html',
             template: './src/html-templates/contactwo-template.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'signin.html',
+            template: './src/html-templates/signin-template.html'
+        }),
         new FaviconsWebpackPlugin({
             logo: './src/images/D002-Favicon7@4x.png'
         })
