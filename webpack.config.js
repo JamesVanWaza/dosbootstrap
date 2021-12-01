@@ -12,8 +12,7 @@ module.exports = {
     entry: {
         index: './src/js/index.js',
         firebase: './src/js/firebase.js',
-        contact1: './src/js/contact.js',
-        contact2: './src/js/contactwo.js'
+        signin: './src/js/signin.js',
     },
     output: {
         filename: "[name].bundle.js",
