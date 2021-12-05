@@ -60,5 +60,13 @@ function footer() {
 }
 
 /** DarkMode */
-// const darkMode = document.getElementById("flexSwitchCheckChecked");
-// darkMode.addEventListener("click", darkModeToggle);
+const darkMode = document.getElementById("flexSwitchCheckChecked");
+darkMode.addEventListener("click", darkModeToggle);
+
+function darkModeToggle() {
+    if (darkMode.checked) {
+        document.body.classList.add("dark-mode");
+    } else {
+        document.body.classList.remove("dark-mode");
+    }
+}

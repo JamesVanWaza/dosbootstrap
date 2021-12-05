@@ -254,7 +254,7 @@ $aspect-ratios: ( "1x1": 100%, "4x3": calc(3 / 4 * 100%), "16x9": calc(9 / 16 * 
 //
 // Font, line-height, and color for body text, headings, and more.
 // stylelint-disable value-keyword-case
-$font-family-sans-serif : "Outfit" !default;
+$font-family-sans-serif: "Outfit" !default;
 $font-family-monospace: PT Mono,
 monospace !default;
 // stylelint-enable value-keyword-case
