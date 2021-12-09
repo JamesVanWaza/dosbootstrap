@@ -58,7 +58,16 @@
  body {
      /* Margin bottom by footer height */
      margin-bottom: 60px;
+     --text-color: lighten($black, 10%);
+     --bkg-color: $white;
+     .dark-theme & {
+         --text-color: lighten($black, 10%);
+         --bkg-color: $black;
+     }
  }
+ 
+ // Start Here
+ @media() {}
  
  nav {
      background-color: $purple-500;
@@ -110,6 +119,8 @@
          color: $purple-600;
      }
  }
+ 
+ .btn-toggle {}
  
  h2.card-title {
      color: $purple-600;
