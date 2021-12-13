@@ -59,14 +59,26 @@ function footer() {
     document.body.insertBefore(footerDiv, newDiv);
 }
 
-/** DarkMode */
-const darkMode = document.getElementById("flexSwitchCheckChecked");
-darkMode.addEventListener("click", darkModeToggle);
+/** DarkMode Toggle Button */
+const btn = document.querySelector(".btn-toggle");
 
-function darkModeToggle() {
-    if (darkMode.checked) {
-        document.body.classList.add("dark-mode");
-    } else {
-        document.body.classList.remove("dark-mode");
-    }
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+const currentTheme = localStorage.getItem("theme");
+
+if (currentTheme == "dark") {
+    document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+    document.body.classList.toggle("light-theme");
 }
+
+btn.addEventListener("click", function() {
+    if (prefersDarkScheme.matches) {
+        document.body.classList.toggle("light-theme");
+        var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+    } else {
+        document.body.classList.toggle("dark-theme");
+        var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+    }
+    localStorage.setItem("theme", theme);
+});
