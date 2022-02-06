@@ -10,7 +10,6 @@ yarn.lock
 .htaccess
 .gcloudignore
 .firebase/hosting.cHVibGlj.cache
-.firebaserc
 functions/.eslintrc.json
 functions/node_modules/
 firestore.rules
