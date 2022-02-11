@@ -10,6 +10,9 @@ import '@popperjs/core';
 /** Botstrap SCSS **/
 import '../scss/style.scss';
 
+/** FontAwesome 6 */
+import '@fortawesome/fontawesome-free/js/all.js';
+
 // Contact Form Validation
 // (function() {
 //     'use strict';
