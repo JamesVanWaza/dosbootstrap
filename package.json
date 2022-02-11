@@ -1,6 +1,6 @@
 {
     "name": "dosbootstrap",
-    "version": "2.7.4",
+    "version": "2.7.5",
     "description": "Dosbranding Creative ",
     "main": "index.html",
     "scripts": {
@@ -13,7 +13,7 @@
         "@popperjs/core": "^2.11.2",
         "bootstrap": "^5.1.3",
         "firebase": "^9.6.6",
-        "instantsearch.js": "^4.38.0"
+        "instantsearch.js": "^4.38.1"
     },
     "devDependencies": {
         "@babel/core": "^7.17.2",
