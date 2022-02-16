@@ -63,7 +63,7 @@ function footer() {
 }
 
 /** DarkMode Toggle Button */
-const btn = document.querySelector(".btn-toggle");
+const toggleSwitch = document.querySelector("#flexSwitchCheckChecked");
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -75,7 +75,7 @@ if (currentTheme == "dark") {
     document.body.classList.toggle("light-theme");
 }
 
-btn.addEventListener("click", function() {
+toggleSwitch.addEventListener("click", function() {
     if (prefersDarkScheme.matches) {
         document.body.classList.toggle("light-theme");
         var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
