@@ -175,10 +175,11 @@
             // }
             #btnPwd {
                 background-color: $purple-600;
+                border: 4px solid $purple-600;
                 &:hover {
                     background-color: $white;
                     transition: ease-in 0.3s;
                     color: $purple-600;
-                    border: 4px solid $purple-600;
+                    // border: 4px solid $purple-600;
                 }
             }
