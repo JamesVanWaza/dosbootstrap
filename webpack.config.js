@@ -11,8 +11,7 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/js/index.js',
-        firebase: './src/js/firebase.js',
-        signin: './src/js/signin.js',
+        app: './src/js/app.js',
     },
     output: {
         filename: "[name].bundle.js",
@@ -57,6 +56,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'signin.html',
             template: './src/html-templates/signin-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'signin-github.html',
+            template: './src/html-templates/signin-github-template.html'
         }),
         new FaviconsWebpackPlugin({
             logo: './src/images/D002-Favicon7@4x.png'
