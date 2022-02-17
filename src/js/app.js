@@ -1,8 +1,7 @@
 // Initialize Firebase
 import { initializeApp } from "firebase/app";
-
 import {} from "firebase/analytics";
-import {} from "firebase/auth";
+import { getAuth, GithubAuthProvider, signInWithRedirect, signOut } from "firebase/auth";
 import {} from "firebase/firestore";
 import {} from "firebase/functions";
 import {} from "firebase/messaging";
@@ -24,3 +23,24 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Auth 
+const auth = getAuth(app);
+
+/** Sign in with Github */
+const githubtn = document.querySelector('.githubtn');
+githubtn.addEventListener('click', () => {
+    const provider = new GithubAuthProvider();
+    signInWithRedirect(auth, provider);
+});
+
+/** Sign out */
+const signout = document.querySelector('.signout');
+signout.addEventListener('click', () => {
+    signOut(auth).then(() => {
+        // Sign-out successful.
+        console.log('Sign-out successful.');
+    }).catch((error) => {
+        // An error happened.
+    });
+});
