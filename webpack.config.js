@@ -61,6 +61,10 @@ module.exports = {
             filename: 'signin-github.html',
             template: './src/html-templates/signin-github-template.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'admin.html',
+            template: './src/html-templates/admin-template.html'
+        }),
         new FaviconsWebpackPlugin({
             logo: './src/images/D002-Favicon7@4x.png'
         })
