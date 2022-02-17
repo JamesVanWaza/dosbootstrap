@@ -85,3 +85,11 @@ toggleSwitch.addEventListener("click", function() {
     }
     localStorage.setItem("theme", theme);
 });
+
+/** SidebarJS */
+(function() {
+    let tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.forEach(function(tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+})();
