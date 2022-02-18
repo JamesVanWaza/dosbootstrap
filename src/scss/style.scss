@@ -52,11 +52,14 @@ html {
 body {
     --text-color: $gray-300;
     --bkg-color: $white;
-}
-
-body.dark-theme {
-    --text-color: #eee;
-    --bkg-color: $gray-300;
+    background: var(--bkg-color);
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: 'Outfit', sans-serif;
+    .dark-theme {
+        --text-color: #eee;
+        --bkg-color: $gray-300;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,18 +67,11 @@ body.dark-theme {
     body {
         --text-color: #eee;
         --bkg-color: #222;
+        .light-theme {
+            --text-color: #222;
+            --bkg-color: $white;
+        }
     }
-    body.light-theme {
-        --text-color: #222;
-        --bkg-color: $white;
-    }
-}
-
-body {
-    background: var(--bkg-color);
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    font-family: 'Outfit', sans-serif;
 }
 
 nav {
