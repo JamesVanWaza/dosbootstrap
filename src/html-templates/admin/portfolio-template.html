@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with Bootstrap 4</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A14EDE;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">DOSBRANDING</a>
+            <!-- <a class="navbar-brand" href="index.html">
+                    <img src="http://placeskull.com/50/50/4f5a30">
+                </a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <button type="submit">Add New Project</button>
+    <!-- Container -->
+    <section class="container-fluid mt-3">
+        <div class="row">
+            <div class="col col-xs-6 col-sm-6">
+                <div class="card">
+                    <img src="http://placeskull.com/170/170" class="card-img-top" alt="..." style="width: 65rem; height: 47rem">
+                    <div class="card-body">
+                        <h5 class="card-title">Start SASS</h5>
+                        <p class="card-text">Starting point of website project. It's also built with Firebase to enable hosting, authentication and storage
+                        </p>
+                        <a href="https://start-sass.dostesting.co.ke" class="btn btn-primary" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-xs-6 col-sm-6">
+                <div class="card">
+                    <img src="https://picsum.photos/id/1/5616/3744" class="card-img-top" alt="..." style="width: 65rem; height: 47rem">
+                    <div class="card-body">
+                        <h5 class="card-title">Start SASS</h5>
+                        <p class="card-text">Implementing search using the Algolia API
+                        </p>
+                        <a href="https://ad.dostesting.co.ke" class="btn btn-primary" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center footer" style="background-color: #A14EDE;">
+        2019
+        <script>
+            new Date().getFullYear() > 2019 && document.write("- " + new Date().getFullYear());
+        </script>
+        <i class="fas fa-copyright"></i> Built with <i class="fas fa-heart"></i> from Firebase, maintained by Dosbranding Creative
+    </footer>
+</body>
+
+</html>

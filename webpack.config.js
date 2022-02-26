@@ -11,9 +11,7 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/js/index.js',
-        firebase: './src/js/firebase.js',
-        contact1: './src/js/contact.js',
-        contact2: './src/js/contactwo.js'
+        app: './src/js/app.js',
     },
     output: {
         filename: "[name].bundle.js",
@@ -54,6 +52,22 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'contact-two.html',
             template: './src/html-templates/contactwo-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'signin.html',
+            template: './src/html-templates/signin-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'signin-github.html',
+            template: './src/html-templates/signin-github-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'admin/admin.html',
+            template: './src/html-templates/admin/admin-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'admin/portfolio.html',
+            template: './src/html-templates/admin/portfolio-template.html'
         }),
         new FaviconsWebpackPlugin({
             logo: './src/images/D002-Favicon7@4x.png'
