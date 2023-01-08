@@ -68,9 +68,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'admin/portfolio.html',
             template: './src/html-templates/admin/portfolio-template.html'
-        }),
-        new FaviconsWebpackPlugin({
-            logo: './src/images/D002-Favicon7@4x.png'
         })
     ],
     module: {
