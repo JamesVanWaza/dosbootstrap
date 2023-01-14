@@ -12,7 +12,6 @@ yarn.lock
 .firebase/hosting.cHVibGlj.cache
 functions/.eslintrc.json
 functions/node_modules/
-firestore.rules
 .pnp.js
 .yarn/
 .yarnrc.yml
