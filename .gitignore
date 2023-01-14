@@ -13,7 +13,6 @@ yarn.lock
 functions/.eslintrc.json
 functions/node_modules/
 firestore.rules
-firestore.indexes.json
 .pnp.js
 .yarn/
 .yarnrc.yml
