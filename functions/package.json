@@ -1,7 +1,7 @@
 {
     "name": "dosbrandingfunctions",
     "description": "Dosbranding Cloud Functions on Firebase",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "scripts": {
         "lint": "eslint",
         "serve": "firebase serve --only functions",
