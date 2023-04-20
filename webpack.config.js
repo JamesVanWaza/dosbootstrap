@@ -38,6 +38,10 @@ module.exports = {
             template: './src/html-templates/index-template.html'
         }),
         new HtmlWebpackPlugin({
+            filename: 'blog.html',
+            template: './src/html-templates/blog-template.html'
+        }),
+        new HtmlWebpackPlugin({
             filename: '404.html',
             template: './src/html-templates/404-template.html'
         }),

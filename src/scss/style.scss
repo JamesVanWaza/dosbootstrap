@@ -154,6 +154,18 @@ nav {
     }
 }
 
+.readmorebtn {
+    background-color: $purple-600;
+    color: $white;
+    border: 2px solid $purple-600;
+    &:hover {
+        background-color: $white;
+        color: $purple-600;
+        border: 2px solid $purple-600;
+        transition: ease-in 0.3s;
+    }
+}
+
 // End Buttons //
 .navbar-toggler {
     color: invert($white);
