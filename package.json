@@ -13,7 +13,7 @@
         "@popperjs/core": "^2.11.7",
         "bootstrap": "^5.2.3",
         "firebase": "^9.20.0",
-        "instantsearch.js": "^4.54.1"
+        "instantsearch.js": "^4.55.0"
     },
     "devDependencies": {
         "@babel/core": "^7.21.4",
