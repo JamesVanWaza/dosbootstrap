@@ -74,7 +74,7 @@ module.exports = {
             filename: 'admin/portfolio.html',
             template: './src/html-templates/admin/portfolio-template.html'
         }),
-        new FaviconsWebpackPlugin('./images/Favicons/4x/Favicon2@4x.png');
+        new FaviconsWebpackPlugin('./src/images/Favicons/SVG/Favicon1-Color.svg')
     ],
     module: {
         rules: [{
