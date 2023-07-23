@@ -15,7 +15,8 @@ module.exports = {
     },
     output: {
         filename: "[name].bundle.js",
-        path: path.resolve(__dirname, "public")
+        path: path.resolve(__dirname, "public"),
+        assetModuleFilename: 'images/[hash][ext][query]'
     },
     target: 'web',
     devServer: {
@@ -72,49 +73,47 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'admin/portfolio.html',
             template: './src/html-templates/admin/portfolio-template.html'
-        })
+        }),
+        new FaviconsWebpackPlugin('./images/')
     ],
     module: {
         rules: [{
-                // Whenever a javascript file is found, babel should run and do not compile node_module files
-                test: /\.js$/,
-                exclude: /(node_modules)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        // Supports all the browsers
-                        presets: ['@babel/preset-env']
-                    }
+            // Whenever a javascript file is found, babel should run and do not compile node_module files
+            test: /\.js$/,
+            exclude: /(node_modules)/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    // Supports all the browsers
+                    presets: ['@babel/preset-env']
                 }
-            },
-            {
-                test: /\.(scss)$/,
-                use: [{
-                        loader: 'style-loader', // inject CSS to page
-                    }, {
-                        loader: 'css-loader', // translates CSS into CommonJS modules
-                    },
-                    {
-                        loader: 'sass-loader' // compiles Sass to CSS
-                    }
-                ]
-            },
-            // Start here for the URL Loader
-            {
-                test: /\.(png|jpg)$/,
-                use: [
-                    { loader: 'url-loader' }
-                ]
-            },
-            // For Fontawesome Fonts to Work
-            {
-                test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]\.png|jpg)?$/,
-                use: 'url-loader?limit=10000',
-            },
-            {
-                test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-                use: 'file-loader',
             }
+        },
+        {
+            test: /\.(scss)$/,
+            use: [{
+                loader: 'style-loader', // inject CSS to page
+            }, {
+                loader: 'css-loader', // translates CSS into CommonJS modules
+            },
+            {
+                loader: 'sass-loader' // compiles Sass to CSS
+            }
+            ]
+        },
+        {
+            test: /\.(png|jpg)$/,
+            type: 'asset/resource'
+        },
+        // For Fontawesome Fonts to Work
+        {
+            test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]\.png|jpg)?$/,
+            use: 'asset/fonts',
+        },
+        {
+            test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+            use: 'asset/fonts',
+        }
         ]
     },
     resolve: {
