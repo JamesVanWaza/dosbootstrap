@@ -5,7 +5,6 @@
 *.yaml
 *.pkg
 .DS_Store
-images/
 yarn.lock
 .htaccess
 .gcloudignore
