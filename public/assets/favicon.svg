@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c6932c;
+        font-family: EthnocentricRg-Regular, Ethnocentric;
+        font-size: 332.05px;
+      }
+
+      .cls-2 {
+        fill: #66318f;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" y="0" width="512" height="512" rx="129.43" ry="129.43"/>
+  <text class="cls-1" transform="translate(179.48 368.84) scale(.84 1)"><tspan x="0" y="0">1</tspan></text>
+</svg>
