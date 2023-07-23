@@ -1,7 +1,7 @@
 {
     "name": "dosbootstrap",
-    "version": "2.8.7",
-    "description": "Dosbranding Creative ",
+    "version": "2.8.9",
+    "description": "Dosbranding Creative",
     "main": "index.html",
     "scripts": {
         "build": "webpack -w",
@@ -26,7 +26,6 @@
         "css-loader": "^6.8.1",
         "datatables.net": "^1.13.5",
         "favicons-webpack-plugin": "^6.0.0",
-        "file-loader": "^6.2.0",
         "html-webpack-plugin": "^5.5.3",
         "instantsearch.css": "^8.0.0",
         "jquery": "^3.7.0",
@@ -35,7 +34,6 @@
         "sass-loader": "^13.3.2",
         "style-loader": "^3.3.3",
         "terser-webpack-plugin": "^5.3.9",
-        "url-loader": "^4.1.1",
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"
