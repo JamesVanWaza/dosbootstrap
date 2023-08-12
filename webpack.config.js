@@ -104,11 +104,11 @@ module.exports = {
         // For Fontawesome Fonts to Work
         {
             test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]\.png|jpg)?$/,
-            use: 'asset/fonts',
+            use: 'asset/resource',
         },
         {
             test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-            use: 'asset/fonts',
+            use: 'asset/resource',
         }
         ]
     },
