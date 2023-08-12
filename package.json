@@ -1,6 +1,6 @@
 {
     "name": "dosbootstrap",
-    "version": "2.9.0",
+    "version": "2.9.1",
     "description": "Dosbranding Creative",
     "main": "index.html",
     "scripts": {
@@ -10,7 +10,9 @@
     "author": "JamesVanWaza <info@dosbranding.com>",
     "license": "MIT",
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.4.2",
         "@popperjs/core": "^2.11.8",
+        "algoliasearch": "^4.19.1",
         "bootstrap": "^5.3.1",
         "firebase": "^10.1.0",
         "instantsearch.js": "^4.56.9"
@@ -18,8 +20,6 @@
     "devDependencies": {
         "@babel/core": "^7.22.10",
         "@babel/preset-env": "^7.22.10",
-        "@fortawesome/fontawesome-free": "^6.4.2",
-        "algoliasearch": "^4.19.1",
         "autoprefixer": "^10.4.14",
         "babel-loader": "^9.1.3",
         "chart.js": "^4.3.3",
@@ -28,9 +28,7 @@
         "favicons-webpack-plugin": "^6.0.0",
         "html-webpack-plugin": "^5.5.3",
         "instantsearch.css": "^8.0.0",
-        "jquery": "^3.7.0",
         "node-sass": "^9.0.0",
-        "postcss-loader": "^7.3.3",
         "sass-loader": "^13.3.2",
         "style-loader": "^3.3.3",
         "terser-webpack-plugin": "^5.3.9",
