@@ -1,6 +1,6 @@
 {
     "name": "dosbootstrap",
-    "version": "2.9.3",
+    "version": "2.9.4",
     "description": "Dosbranding Creative",
     "main": "index.html",
     "scripts": {
@@ -14,15 +14,15 @@
         "@popperjs/core": "^2.11.8",
         "algoliasearch": "^4.19.1",
         "bootstrap": "^5.3.1",
-        "firebase": "^10.3.0",
+        "firebase": "^10.3.1",
         "instantsearch.js": "^4.56.9"
     },
     "devDependencies": {
-        "@babel/core": "^7.22.10",
-        "@babel/preset-env": "^7.22.10",
+        "@babel/core": "^7.22.11",
+        "@babel/preset-env": "^7.22.14",
         "autoprefixer": "^10.4.15",
         "babel-loader": "^9.1.3",
-        "chart.js": "^4.3.3",
+        "chart.js": "^4.4.0",
         "css-loader": "^6.8.1",
         "datatables.net": "^1.13.6",
         "favicons-webpack-plugin": "^6.0.1",
