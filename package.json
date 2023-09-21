@@ -27,7 +27,7 @@
         "datatables.net": "^1.13.6",
         "favicons-webpack-plugin": "^6.0.1",
         "html-webpack-plugin": "^5.5.3",
-        "instantsearch.css": "^8.0.0",
+        "instantsearch.css": "^8.1.0",
         "node-sass": "^9.0.0",
         "sass-loader": "^13.3.2",
         "style-loader": "^3.3.3",
