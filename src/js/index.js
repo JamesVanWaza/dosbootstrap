@@ -1,9 +1,6 @@
 /** Bootstrap JS */
 import 'bootstrap';
 
-/** jQuery */
-import 'jquery';
-
 /** PopperJS */
 import '@popperjs/core';
 
