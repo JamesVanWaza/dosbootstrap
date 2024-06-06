@@ -1,6 +1,6 @@
 {
     "name": "dosbootstrap",
-    "version": "2024.3.6",
+    "version": "2024.3.7",
     "description": "Dosbranding Creative",
     "main": "index.html",
     "scripts": {
@@ -18,8 +18,8 @@
         "instantsearch.js": "^4.71.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.24.6",
-        "@babel/preset-env": "^7.24.6",
+        "@babel/core": "^7.24.7",
+        "@babel/preset-env": "^7.24.7",
         "autoprefixer": "^10.4.19",
         "babel-loader": "^9.1.3",
         "chart.js": "^4.4.3",
