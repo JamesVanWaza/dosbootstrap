@@ -1,7 +1,7 @@
 {
     "name": "dosbrandingfunctions",
     "description": "Dosbranding Cloud Functions on Firebase",
-    "version": "1.2.7",
+    "version": "2024.1.2",
     "scripts": {
         "lint": "eslint",
         "serve": "firebase serve --only functions",
@@ -11,15 +11,15 @@
         "logs": "firebase functions:log"
     },
     "engines": {
-        "node": "20"
+        "node": "18"
     },
     "dependencies": {
         "firebase-admin": "^12.1.1",
         "firebase-functions": "^5.0.1"
     },
     "devDependencies": {
-        "eslint": "^9.3.0",
-        "eslint-plugin-promise": "^6.1.1"
+        "eslint": "^9.4.0",
+        "eslint-plugin-promise": "^6.2.0"
     },
     "private": true,
     "main": "index.js",
