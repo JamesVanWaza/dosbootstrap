@@ -62,6 +62,7 @@ module.exports = {
             filename: 'signin-github.html',
             template: './src/html-templates/signin-github-template.html'
         }),
+        // Admin Pages
         new HtmlWebpackPlugin({
             filename: 'admin/admin.html',
             template: './src/html-templates/admin/admin-template.html'
@@ -69,6 +70,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'admin/portfolio.html',
             template: './src/html-templates/admin/portfolio-template.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'admin/math.html',
+            template: './src/html-templates/admin/math-template.html'
         }),
         new FaviconsWebpackPlugin('./src/images/Favicons/SVG/Favicon1-Color.svg')
     ],
